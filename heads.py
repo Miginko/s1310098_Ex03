@@ -11,6 +11,10 @@ def main():
     heads = results.count("Heads")
     tails = results.count("Tails")
     print(f"Heads: {heads}, Tails: {tails}")
+    if heads > tails:
+        print("You won!")
+    else:
+        print("You lost!")
 
 if __name__ == "__main__":
     main()
